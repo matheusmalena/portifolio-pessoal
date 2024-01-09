@@ -1,0 +1,60 @@
+/*===== STYLE RESPONSIVE MOBILE  =====*/
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .portfolio-img {
+        width: 320px;
+    }
+
+    .portfolio-content {
+        align-items: center;
+    }
+
+    .swiper-portfolio-icon {
+        font-size: 3.5rem;
+    }
+    
+    .swiper-button-prev {
+        left: -3.5rem;
+    }
+    
+    .swiper-button-next {
+        right: -3.5rem;
+    }
+    
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+        bottom: -4.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    .portfolio-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 420px) {
+    .max-width {
+        padding: 0 5px;
+        }
+
+    .portfolio-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (min-width: 568px) {
+    .portfolio-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
