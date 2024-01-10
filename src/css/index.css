@@ -243,6 +243,7 @@ section .title::after {
 .about .title::after {
   background: var(--clean-white-purple);
   content: "minha história";
+  white-space: nowrap;
 }
 
 .about .about-content .left {
@@ -371,6 +372,7 @@ section .title::after {
 .skills .title::after {
   background: var(--clean-white-purple);
   content: "o que eu sei";
+  white-space: nowrap;
 }
 
 .skills .skills-content .column {
@@ -457,6 +459,7 @@ section .title::after {
   content: "certificados";
   color: var(--color-purple-light);
   background: var(--color-black);
+  white-space: nowrap;
 }
 
 .conquest .carousel .card {
@@ -519,6 +522,7 @@ section .title::after {
 .portfolio .title::after {
   background: var(--clean-white-purple);
   content: "meu portfólio";
+  white-space: nowrap;
 }
 
 .portfolio-container {
@@ -608,6 +612,7 @@ section .title::after {
   content: "mensagem";
   color: var(--color-purple-light);
   background: var(--color-black);
+  white-space: nowrap;
 }
 
 .contact .contact-content .column {
