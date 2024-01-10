@@ -540,6 +540,7 @@ section .title::after {
 
 .portfolio-img {
   width: 300px;
+  margin-bottom: 10px;
   border-radius: .5rem;
   justify-self: center;
 }
@@ -590,10 +591,11 @@ section .title::after {
 
 .swiper-button-next {
   right: -.5rem;
+  margin-right: -1.40rem;
 }
 
 .portfolio-container .swiper-pagination {
-  bottom: -2.5rem;
+  bottom: 2.5rem;
 }
 
 .swiper-pagination-bullet-active {
