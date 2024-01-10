@@ -530,6 +530,7 @@ section .title::after {
   max-width: 768px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  top: 0px;
 }
 
 .portfolio-content {
@@ -598,13 +599,8 @@ section .title::after {
   bottom: 2.5rem;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: var(--first-color);
-}
-
 .swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination {
+.swiper-button-next {
   outline: none;
 }
 
