@@ -379,24 +379,25 @@
            <div class="column right" data-aos="fade-up">
               <div class="text">Fale comigo</div>
 
-              <form action="https://forms.gle/6LZPkw2tDYeGW1WR8" class="input-area">
+              <form action="https://formsubmit.co/robertafontesds@gmail.com" method="POST" class="input-area">
                 <div class="fields">
                   <div class="field name">
-                    <input type="text" placeholder="Nome" required>
+                    <input type="text" name="nome" placeholder="Nome" required>
                   </div>
                   <div class="field email">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" required>
                   </div> 
                 </div> 
                 <div class="field">
-                  <input type="text" placeholder="Assunto" required>
+                  <input type="text" name="assunto" placeholder="Assunto" required>
                 </div>
                 <div class="textarea">
-                  <textarea cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                  <textarea cols="30" rows="10" name="mensagem" placeholder="Mensagem" required></textarea>
                 </div>
                 <div class="button">
                   <button type="submit">Enviar</button> 
-                </div>   
+                </div> 
+                <input type="hidden" name="_subject" value="New submission!">
               </form>
             </div>
           </div>
