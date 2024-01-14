@@ -116,6 +116,7 @@ html {
 .home {
   display: flex;
   background: url("/src/img/banner-bg.png") top no-repeat;
+  background-size: cover;
   color: var(--color-white);
   height: 100vh;
   min-height: 500px;
