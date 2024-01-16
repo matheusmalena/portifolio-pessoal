@@ -15,10 +15,10 @@ html {
 
 /* ============= VARIABLES CSS ============= */
 :root {
-  --first-color: rgb(119, 52, 183);
-  --color-purple-light: rgb(157, 78, 231);
-  --color-white-pink: rgb(223, 168, 255);
-  --clean-white-purple: rgb(247, 232, 252);
+  --first-color: rgb(70,130,180);
+  --color-purple-light: rgb(70,130,180);
+  --color-white-pink: rgb(33, 33, 33);
+  --clean-white-purple: rgb(70,130,180);
   --text-color-light: rgb(134, 122, 159);
   --scroll-thumb-color: rgb(161, 151, 180);
   --scroll-bar-color: rgb(188, 181, 201);

@@ -17,10 +17,10 @@ $(document).ready(function () {
   // typing animation
   var typed = new Typed('.typing', {
     strings: [
-      'Desenvolvedora Web',
+      'Desenvolvedor Web',
       'Analista de Sistemas',
-      'Apaixonada por Códigos',
-      'Gamer',
+      'Gestor de tráfego',
+      'Surfista nas horas vagas',
     ],
     typeSpeed: 100,
     backSpeed: 60,
