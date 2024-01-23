@@ -15,7 +15,7 @@ html {
 
 /* ============= VARIABLES CSS ============= */
 :root {
-  --first-color: rgb(70,130,180);
+  --first-color: rgb(11, 61, 102);
   --color-purple-light: rgb(70,130,180);
   --color-white-pink: rgb(33, 33, 33);
   --clean-white-purple: rgb(70,130,180);
@@ -25,7 +25,7 @@ html {
   --clean-light-gray: rgb(189, 189, 189);
   --color-clean-white:rgb(241, 239, 239);
   --color-white: rgb(255, 255, 255);
-  --color-black: rgb(24, 22, 22);
+  --color-black: rgb(27, 14, 14);
   --color-black-clean: rgb(33, 33, 33);
 }
 
