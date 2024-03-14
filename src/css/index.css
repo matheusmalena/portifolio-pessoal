@@ -134,7 +134,7 @@ html {
 }
 
 .home-icon img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .home .max-width {
@@ -434,19 +434,19 @@ section .title::after {
 }
 
 .skills-content .right .bootstrap::before {
-  width: 50%;
+  width: 60%;
 }
 
 .skills-content .right .js::before {
+  width: 45%;
+}
+
+.skills-content .right .vue::before {
   width: 30%;
 }
 
-.skills-content .right .react::before {
-  width: 5%;
-}
-
 .skills-content .right .sql::before {
-  width: 5%;
+  width: 40%;
 }
 
 
@@ -692,7 +692,7 @@ section .title::after {
   margin-right: 10px;
 }
 
-.contact .right form .email {
+.contact .right form .number {
   margin-left: 10px;
 }
 

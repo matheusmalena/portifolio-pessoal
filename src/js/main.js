@@ -17,13 +17,13 @@ $(document).ready(function () {
   // typing animation
   var typed = new Typed('.typing', {
     strings: [
-      'Desenvolvedor Web',
       'Analista de Sistemas',
+      'Desenvolvedor Web',
       'Gestor de tráfego',
       'Surfista nas horas vagas',
     ],
     typeSpeed: 100,
-    backSpeed: 60,
+    backSpeed: 70,
     loop: true,
   });
 
@@ -65,6 +65,25 @@ var swiper = new Swiper(".mySwiper", {
   },
   mousewheel: true,
   keyboard: true,
+});
+
+$(document).ready(function(){
+  $(".carousel").owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      1000:{
+        items:4
+      }
+    }
+  });
 });
 
 
