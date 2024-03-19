@@ -275,6 +275,10 @@ section .title::after {
   color: var(--first-color);
 }
 
+span {
+  color: var(--first-color);
+}
+
 .about .about-content .right p {
   text-align: justify;
 }
@@ -568,6 +572,7 @@ section .title::after {
   border-radius: 30px;
   border: 2px solid var(--first-color);
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .portfolio-button:hover {
