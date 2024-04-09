@@ -49,8 +49,9 @@ html {
 /* script js sticky*/
 .nav-bar.sticky {
   padding: 15px 0;
-  background: var(--first-color);
+  background: var(--clean-white-purple);
   z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 .nav-bar .max-width {
@@ -162,6 +163,10 @@ html {
   font-weight: 500;
 }
 
+.about-content span{
+  font-weight: bold;
+}
+
 /* social media icons  */
 .social-media {
   margin-top: 30px;
@@ -208,6 +213,10 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.services .serv-content {
+  justify-content: space-evenly;
 }
 
 section .title {
@@ -335,7 +344,7 @@ span {
 
 .services .serv-content .card {
   width: calc(33% - 20px);
-  height: 350px;
+  height: 380px;
   background: var(--color-black-clean);
   text-align: center;
   border-radius: 30px;
@@ -344,6 +353,7 @@ span {
   cursor: pointer;
   transition: all .50s ease;
   z-index: 50;
+  margin: 15px 0px;
 }
 
 .services .serv-content .card:hover {
@@ -448,7 +458,7 @@ span {
 }
 
 .skills-content .right .vue::before {
-  width: 30%;
+  width: 35%;
 }
 
 .skills-content .right .sql::before {
