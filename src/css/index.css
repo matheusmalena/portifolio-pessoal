@@ -344,7 +344,7 @@ span {
 
 .services .serv-content .card {
   width: calc(33% - 20px);
-  height: 380px;
+  height: 360px;
   background: var(--color-black-clean);
   text-align: center;
   border-radius: 30px;
