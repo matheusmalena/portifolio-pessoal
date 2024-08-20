@@ -27,6 +27,8 @@ html {
   --color-white: rgb(255, 255, 255);
   --color-black: rgb(27, 14, 14);
   --color-black-clean: rgb(33, 33, 33);
+  --color-blue-light-hover: rgb(87, 164, 226);
+  --color-white-hover: rgb(233, 231, 231);
 }
 
 
@@ -41,6 +43,10 @@ html {
 .nav-bar {
   position: fixed;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
   padding: 30px 0;
   font-family: 'Ubuntu', sans-serif;
   transition: all 0.3s ease;
@@ -55,9 +61,13 @@ html {
 }
 
 .nav-bar .max-width {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
 }
 
 .nav-bar .logo a {
@@ -80,6 +90,10 @@ html {
 .nav-bar .menu li {
   list-style: none;
   display: inline-block;
+}
+
+.nav-bar .menu {
+  margin-bottom: 0 !important;
 }
 
 .nav-bar .menu li a {
@@ -113,6 +127,27 @@ html {
   display: none;
 }
 
+.btn-me {
+  padding: 0.5rem 0.8rem;
+  background-color: var(--color-purple-light);
+  text-decoration: none;
+  border-radius: 1rem;
+  color: var(--color-white);
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-me:hover {
+  background-color: var(--color-blue-light-hover);
+}
+
+.fa-whatsapp {
+  color: var(--color-white);
+}
+
 
 /* ============= HOME SECTION ============= */
 .home {
@@ -126,6 +161,7 @@ html {
 }
 
 .home-icon img {
+  width: 370px;
   height: 370px;
   border-radius: 100%;
   position: absolute;
@@ -759,8 +795,12 @@ span {
 footer {
   background: var(--color-black-clean); 
   padding: 17px 23px;
-  color: var(--color-white);
+  color: var(--color-white) !important;
   text-align: center;
+}
+
+footer span {
+  color: var(--color-white) !important;
 }
 
 footer span a {
@@ -770,7 +810,7 @@ footer span a {
 }
 
 footer span a:hover {
-  text-decoration: underline;
+  color: var(--color-blue-light-hover);
 }
 
 
