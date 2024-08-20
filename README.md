@@ -21,7 +21,7 @@ Desenvolvi o meu próprio site para poder compartilhar a minha tranjetória na p
 
 ## 🖼️ Tela Inicial : 
 
-![image](https://github.com/betafontes/personal-portfolio/assets/70981960/9d008f19-e224-486e-a516-d058ceabec57)
+![Tela Inicial](./src/img/tela-inicial.png)
 
 
 
