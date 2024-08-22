@@ -699,6 +699,7 @@ span {
 
 .contact .contact-content .row {
   display: flex;
+  width: 90% !important;
   height: 65px;
   align-items: center;
  }

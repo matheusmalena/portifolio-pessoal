@@ -151,6 +151,10 @@
     .btn-me {
         display: none;
     }
+    .portfolio-title {
+        font-size: 0.5rem;
+        margin-bottom: 0rem;
+      }
 }
 
 @media (max-width: 500px) {
