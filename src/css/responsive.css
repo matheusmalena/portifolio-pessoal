@@ -1,8 +1,8 @@
 /*===== STYLE RESPONSIVE MOBILE  =====*/
 @media (max-width: 1300px) {
-  .home .max-width {
-    margin-left: 0px;
-  }
+    .home .max-width {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 1104px) {
@@ -133,6 +133,24 @@
     .services .serv-content .card .box p {
         max-width: 100%;
     }
+
+    .btn-me-responsive {
+        padding: 0.5rem 0.8rem;
+        background-color: var(--color-purple-light);
+        text-decoration: none;
+        border-radius: 1rem;
+        color: var(--color-white);
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: 250px;
+    }
+
+    .btn-me {
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {
@@ -170,23 +188,23 @@
     .swiper-portfolio-icon {
         font-size: 3.5rem;
     }
-    
+
     .swiper-button-prev {
         left: -3.5rem;
     }
-    
+
     .swiper-button-next {
         right: -3.5rem;
     }
-    
+
     .swiper-container-horizontal {
         bottom: -3.5rem;
     }
-    
+
 }
 
 @media screen and (max-width: 350px) {
-    
+
     .portfolio-container {
         margin-left: 1rem;
         margin-right: 1rem;
@@ -195,7 +213,7 @@
 
 
 @media screen and (min-width: 420px) {
-    
+
     .portfolio-container {
         margin-left: auto;
         margin-right: auto;
@@ -209,4 +227,3 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-

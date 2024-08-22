@@ -148,6 +148,10 @@ html {
   color: var(--color-white);
 }
 
+.btn-me-responsive {
+  display: none;
+}
+
 
 /* ============= HOME SECTION ============= */
 .home {
