@@ -175,6 +175,10 @@ html {
   transition: all .50s ease;
 }
 
+.img-home-responsive {
+  display: none;
+}
+
 .home-icon img:hover {
   transform: scale(1.2);
 }
