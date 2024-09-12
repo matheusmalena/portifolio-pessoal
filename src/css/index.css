@@ -55,7 +55,7 @@ html {
 /* script js sticky*/
 .nav-bar.sticky {
   padding: 15px 0;
-  background: var(--first-color);
+  background: var(--clean-white-purple);
   z-index: 999;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
@@ -84,7 +84,7 @@ html {
 
 /* script js sticky */
 .nav-bar.sticky .logo a span {
-  color: var(--color-white-pink);
+  color: var(--first-color);
 }
 
 .nav-bar .menu li {
@@ -129,10 +129,10 @@ html {
 
 .btn-me {
   padding: 0.5rem 0.8rem;
-  background-color: var(--color-purple-light);
+  background-color: var(--color-white);
   text-decoration: none;
   border-radius: 1rem;
-  color: var(--color-white);
+  color: var(--color-black);
   font-family: 'Ubuntu', sans-serif;
   display: flex;
   justify-content: center;
@@ -145,7 +145,11 @@ html {
 }
 
 .fa-whatsapp {
-  color: var(--color-white);
+  font-size: 20px;
+  background-color: rgb(63, 204, 63);
+  padding: 0.1rem 0.2rem;
+  color: white;
+  border-radius: 20px;
 }
 
 
