@@ -712,6 +712,11 @@ span {
   align-items: center;
  }
 
+ .info-icons {
+  display: flex;
+  align-items: center !important;
+ }
+
 .contact .contact-content .row .info {
   margin-left: 25px;
 }
