@@ -152,6 +152,10 @@ html {
   border-radius: 20px;
 }
 
+.btn-me-responsive {
+  display: none;
+}
+
 
 /* ============= HOME SECTION ============= */
 .home {
@@ -173,6 +177,10 @@ html {
   border: 1px solid transparent;
   right: 30vh;
   transition: all .50s ease;
+}
+
+.img-home-responsive {
+  display: none;
 }
 
 .home-icon img:hover {
@@ -699,6 +707,7 @@ span {
 
 .contact .contact-content .row {
   display: flex;
+  width: 90% !important;
   height: 65px;
   align-items: center;
  }
