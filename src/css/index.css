@@ -140,6 +140,25 @@ html {
   gap: 0.5rem;
 }
 
+.btn-me-wpp {
+  padding: 0.5rem 0.8rem;
+  background-color: var(--color-white) !important;
+  text-decoration: none;
+  border: 1px solid var(--color-white) !important;
+  border-radius: 1rem;
+  color: var(--color-black) !important;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-me-wpp:hover {
+  background-color: rgba(236, 234, 234, 0.87) !important;
+  border: 1px solid rgba(236, 234, 234, 0.87) !important;
+}
+
 .btn-me:hover {
   background-color: var(--color-blue-light-hover);
 }
@@ -154,6 +173,11 @@ html {
 
 .btn-me-responsive {
   display: none;
+}
+
+.icon-wpp{
+  width: 25px;
+  height: 25px;
 }
 
 
