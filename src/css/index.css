@@ -235,10 +235,10 @@ html {
 
 .home .home-content .text-3 span {
   background: linear-gradient(90deg, rgba(195, 236, 254, 1) 1%, rgba(70, 130, 180, 1) 38%, rgba(195, 236, 254, 1) 70%);
-  -webkit-background-clip: text; /* Para navegadores baseados em WebKit (Chrome, Safari) */
-  -webkit-text-fill-color: transparent; /* Para navegadores baseados em WebKit */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 500;
-  display: inline-block; /* Certifique-se de que o texto seja um bloco em linha para que o fundo funcione */
+  display: inline-block;
 }
 
 .about-content span{
@@ -254,7 +254,11 @@ html {
   display: inline-block;
   margin: 9px;
   font-size: 34px;
-  color: var(--color-white);
+  background: linear-gradient(90deg, rgba(195, 236, 254, 1) 1%, rgba(70, 130, 180, 1) 38%, rgba(195, 236, 254, 1) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
   cursor: pointer;
   margin-right: 15px;
   transition: all .50s ease;
@@ -263,7 +267,11 @@ html {
 .social-media a:hover i {
   transform: translateY(-3px);
   transition: all 0.5s ease;
-  color: var(--color-purple-light);
+  background: linear-gradient(90deg, rgba(195, 236, 254, 1) 1%, rgba(70, 130, 180, 1) 38%, rgba(195, 236, 254, 1) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 
@@ -439,10 +447,10 @@ span {
 .services .serv-content .card i {
   font-size: 32px;
   background: linear-gradient(90deg, rgba(195, 236, 254, 1) 1%, rgba(70, 130, 180, 1) 38%, rgba(195, 236, 254, 1) 70%);
-  -webkit-background-clip: text; /* Para navegadores baseados em WebKit (Chrome, Safari) */
-  -webkit-text-fill-color: transparent; /* Para navegadores baseados em WebKit */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: background 0.3s ease;
-  display: inline-block; /* Necessário para que o gradiente funcione */
+  display: inline-block;
 }
 
 .services .serv-content .card .text {
@@ -499,7 +507,7 @@ span {
   height: 7px;
   width: 100%;
   border-radius: 20px;
-  background: var(--clean-light-gray);
+  background: white;
   position: relative;
 }
 
@@ -646,7 +654,8 @@ span {
 }
 
 .portfolio-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   background: var(--first-color);
   color: var(--color-white);
   font-weight: 500;
@@ -654,13 +663,18 @@ span {
   margin-top: 10px;
   border-radius: 30px;
   border: 2px solid var(--first-color);
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   text-decoration: none;
 }
 
-.portfolio-button:hover {
-  color: var(--first-color);
-  background: none;
+.portfolio-button .button-icon {
+  display: inline-block;
+  transition: transform 0.3s ease; /* Transição suave para o movimento do ícone */
+  margin-left: 3px; /* Espaço entre o texto e o ícone */
+}
+
+.portfolio-button:hover .button-icon {
+  transform: translateX(5px); /* Move o ícone 5px para a direita no hover */
 }
 
 .button-icon {
@@ -714,8 +728,8 @@ span {
   font-weight: 600;
   margin-bottom: 10px;
   background: linear-gradient(90deg, rgba(195, 236, 254, 1) 1%, rgba(70, 130, 180, 1) 38%, rgba(195, 236, 254, 1) 70%);
-  -webkit-background-clip: text; /* Para navegadores baseados em WebKit (Chrome, Safari) */
-  -webkit-text-fill-color: transparent; /* Para navegadores baseados em WebKit */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 500;
   display: inline-block;
 }
@@ -750,8 +764,8 @@ span {
 
 .contact .contact-content .row i {
   background: linear-gradient(90deg, rgba(195, 236, 254, 1) 1%, rgba(70, 130, 180, 1) 38%, rgba(195, 236, 254, 1) 70%);
-  -webkit-background-clip: text; /* Para navegadores baseados em WebKit (Chrome, Safari) */
-  -webkit-text-fill-color: transparent; /* Para navegadores baseados em WebKit */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: background 0.3s ease;
   display: inline-block;
 }
@@ -823,27 +837,29 @@ span {
   margin-top: 15px;
 }
 
-.contact .right form .button button {
+.contact .right form .button button{
   width: 100%;
   height: 100%;
   border: 2px solid var(--color-purple-light);
   background: linear-gradient(90deg, rgba(195, 236, 254, 1) 1%, rgba(70, 130, 180, 1) 38%, rgba(195, 236, 254, 1) 70%);
-  -webkit-background-clip: text; /* Para navegadores baseados em WebKit (Chrome, Safari) */
-  -webkit-text-fill-color: transparent; /* Para navegadores baseados em WebKit */
-  transition: background 0.3s ease;
+  background-size: 200% 100%;
+  background-position: 0 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 1.2s ease;
   display: inline-block;
   font-size: 20px;
   font-weight: 500;
   border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .contact .right form .button button:hover {
+  background-position: 100% 0;
   color: black;
-  background: linear-gradient(90deg, rgba(70,130,180,0.9108018207282913) 0%, rgba(195,236,254,1) 53%, rgba(70,130,180,0.9108018207282913) 100%);
-  -webkit-background-clip: unset; /* Remove o efeito de clipping de fundo */
-  -webkit-text-fill-color: unset; /* Remove o preenchimento de texto transparente */
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
 }
 
 
@@ -860,13 +876,21 @@ footer span {
 }
 
 footer span a {
-  color: var(--color-purple-light);
+  background: linear-gradient(90deg, rgba(195, 236, 254, 1) 1%, rgba(70, 130, 180, 1) 38%, rgba(195, 236, 254, 1) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
   text-decoration: none;
 
 }
 
 footer span a:hover {
-  color: var(--color-blue-light-hover);
+  background: linear-gradient(90deg, rgba(195, 236, 254, 1) 1%, rgb(54, 110, 156) 38%, rgba(195, 236, 254, 1) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 
