@@ -893,6 +893,27 @@ footer span a:hover {
   display: inline-block;
 }
 
+.icons-container {
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 2rem;
+  margin: 0 0 0 3rem;
+  padding: 20px 0;
+}
+
+.icons-ti {
+  width: 85px;
+  height: 85px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.icons-ti:hover {
+  transform: translateY(-5px);
+  filter: grayscale(0);
+}
+
 
 /* ============= SCROLL UP ============= */
 .scrollup {
