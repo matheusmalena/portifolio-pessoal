@@ -199,6 +199,10 @@
         justify-content: start;
         align-items: center;
     }
+
+    .conquest .carousel .card {
+        padding: 20px 25px;
+      }
 }
 
 
@@ -258,5 +262,9 @@
 
     .portfolio-content {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-content {
+       width: 100% !important;
     }
 }
