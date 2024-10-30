@@ -212,6 +212,12 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .icons-container  {
+        margin: 0 0 0 0rem !important;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -233,6 +239,10 @@
 
     .swiper-container-horizontal {
         bottom: -3.5rem;
+    }
+
+    .icons-container  {
+        margin: 0 0 0 0rem !important;
     }
 
 }
