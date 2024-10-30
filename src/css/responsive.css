@@ -114,6 +114,10 @@
     .about .about-content .left img {
         margin-bottom:  0 !important;
     }
+
+    .btn-me {
+        display: none;
+    }
 }
 
 
