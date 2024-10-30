@@ -469,7 +469,7 @@ span {
 /* ============= SKILLS SECTION ============= */
 .skills .title::after {
   background: transparent;
-  content: "skills";
+  content: "o que eu sei";
   white-space: nowrap;
 }
 
@@ -638,7 +638,7 @@ span {
 }
 
 .portfolio-img {
-  width: 300px;
+  width: 100%;
   margin-bottom: 10px;
   border-radius: .5rem;
   justify-self: center;
