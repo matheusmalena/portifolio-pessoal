@@ -18,7 +18,7 @@ $(document).ready(function () {
   var typed = new Typed('.typing', {
     strings: [
       'Analista de Sistemas',
-      'Desenvolvedor Web',
+      'Desenvolvedor',
       'Gestor de tráfego',
       'Surfista nas horas vagas',
     ],
