@@ -169,6 +169,10 @@
         justify-content: center;
         align-items: center;
       }
+
+      .web-design {
+        display: none !important;
+      }
 }
 
 @media (max-width: 500px) {

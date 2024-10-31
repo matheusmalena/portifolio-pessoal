@@ -469,7 +469,7 @@ span {
 /* ============= SKILLS SECTION ============= */
 .skills .title::after {
   background: transparent;
-  content: "o que eu sei";
+  content: "minhas skills";
   white-space: nowrap;
 }
 
