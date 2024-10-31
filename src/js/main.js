@@ -8,11 +8,25 @@ $(document).ready(function () {
     }
   });
 
-  // toggle menu/nav-bar
-  $('.menu-btn').click(function () {
-    $('.nav-bar .menu').toggleClass('active');
-    $('.menu-btn i').toggleClass('active');
+  
+// Seleciona o botão e o menu responsivo
+const menuBtn = document.getElementById('menu-btn');
+const menuResponsive = document.querySelector('.menu-responsive');
+const menuLinks = menuResponsive.querySelectorAll('a'); // Seleciona todos os links dentro do menu responsivo
+
+// Alterna a exibição do menu ao clicar no botão de menu
+menuBtn.addEventListener('click', () => {
+  menuResponsive.classList.toggle('active');
+  menuBtn.classList.toggle('active');
+});
+
+// Fecha o menu ao clicar em um link e navega para o ID correspondente
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menuResponsive.classList.remove('active'); // Fecha o menu
+    menuBtn.classList.remove('active'); // Restaura o ícone do botão
   });
+});
 
   // typing animation
   var typed = new Typed('.typing', {

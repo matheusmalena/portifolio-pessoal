@@ -20,14 +20,23 @@
 }
 
 @media (max-width: 947px) {
+
+      /* Esconde o menu principal em telas pequenas */
+      .menu {
+        display: none;
+      }
     .menu-btn {
         display: block;
         z-index: 999;
     }
 
-    .menu-btn i.active:before {
+    .menu-btn i:before {
+        content: "\f0c9";
+        font-family: "FontAwesome";
+    }
+    
+    .menu-btn.active i:before {
         content: "\f00d";
-
     }
 
     .nav-bar .menu {
