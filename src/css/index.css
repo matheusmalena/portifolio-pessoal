@@ -115,7 +115,7 @@ html {
 }
 
 .nav-bar.sticky .menu li a:hover {
-  color: var(--color-white-pink);
+  color: var(--color-purple-light);
 }
 
 .menu-responsive {
