@@ -31,8 +31,8 @@ menuLinks.forEach(link => {
   // typing animation
   var typed = new Typed('.typing', {
     strings: [
-      'Analista de Sistemas',
       'Desenvolvedor',
+      'DesenvoAnalista de Sistemaslvedor',
       'Gestor de tráfego',
       'Surfista nas horas vagas',
     ],
