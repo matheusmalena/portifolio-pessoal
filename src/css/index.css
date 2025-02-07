@@ -178,6 +178,25 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.95) !important;
   transform: scale(1.05);
 }
+span .yup {
+  color: #212529 !important;
+  cursor: pointer;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 80px !important;
+  height: auto !important;
+  display: inline !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+}
+
+span .yup:hover {
+  color: #701bdf !important;
+  transform: scale(1.05) !important;
+}
+
 
 .fa-whatsapp {
   font-size: 20px;
