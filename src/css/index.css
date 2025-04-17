@@ -1064,3 +1064,182 @@ footer span a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-color-light);
 }
+
+.timeline-section {
+  background: var(--color-clean-white);
+  min-height: 100vh;
+  padding: 100px 15px;
+}
+
+.timeline-section .section-title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 70px;
+}
+
+.timeline-section .section-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-section .section-title h2:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: var(--color-purple-light);
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.timeline-items {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.timeline-items::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-purple-light);
+  left: calc(50% - 1px);
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+  height: 16px;
+  width: 16px;
+  background-color: var(--color-purple-light);
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
+}
+
+.timeline-date {
+  font-size: 18px;
+  color: var(--color-purple-light);
+  margin: 6px 0 15px;
+  font-weight: 600;
+}
+
+.timeline-content {
+  background-color: var(--color-white);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.timeline-content .company {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.timeline-content p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.timeline-content .skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  background: transparent !important;
+  gap: 8px;
+}
+
+.fundo-project-timeline {
+  background: linear-gradient(0deg,rgba(242, 242, 242, 1) 48%, rgba(183, 212, 230, 1) 62%, rgba(142, 191, 222, 1) 84%);
+}
+
+.btn-trajetoria {
+  width: 50% !important;
+  font-size: 1rem !important;
+  background-color: var(--color-white) !important;
+  color: var(--first-color) !important;
+  border: 1px solid var(--color-white) !important;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+}
+
+#projects, #timeline {
+  background: transparent !important;
+}
+
+.timeline-content .skill-tag {
+  background-color: #e9ecef;
+  color: #495057;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* Responsive */
+@media(max-width: 767px) {
+  .timeline-items::before {
+      left: 7px;
+  }
+  .timeline-item:nth-child(odd) {
+      padding-right: 0;
+      padding-left: 37px;
+      text-align: left;
+  }
+  .timeline-item:nth-child(even) {
+      padding-left: 37px;
+  }
+  .timeline-dot {
+      left: 0;
+  }
+  .timeline-section .section-title h2 {
+      font-size: 32px;
+  }
+}

@@ -113,3 +113,32 @@ function scrollUp(){
  
 window.addEventListener('scroll', scrollUp);
 
+document.addEventListener('DOMContentLoaded', function() {
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  
+  function checkVisibility() {
+      timelineItems.forEach(item => {
+          const rect = item.getBoundingClientRect();
+          const isVisible = rect.top < window.innerHeight - 100;
+          
+          if (isVisible) {
+              item.style.opacity = '1';
+              item.style.transform = 'translateY(0)';
+          }
+      });
+  }
+  
+  // Inicializa os estilos
+  timelineItems.forEach(item => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(50px)';
+      item.style.transition = 'all 0.8s ease';
+  });
+  
+  // Verifica visibilidade inicial
+  checkVisibility();
+  
+  // Adiciona evento de scroll
+  window.addEventListener('scroll', checkVisibility);
+});
+
